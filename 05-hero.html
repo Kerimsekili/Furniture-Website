@@ -28,9 +28,17 @@
       }
 
       header {
-        background-color: orangered;
+        /* background-color: orangered; */
         height: 100vh;
         position: relative;
+
+        background-image: linear-gradient(
+            rgba(34, 34, 34, 0.2),
+            rgba(34, 34, 34, 0.6)
+          ),
+          url(hero1.jpg);
+        background-size: cover;
+        color: #fff;
       }
 
       nav {
@@ -38,7 +46,9 @@
         font-weight: bold;
         display: flex;
         justify-content: space-between;
-        background-color: greenyellow;
+        padding-top: 32px;
+        /* background-color: greenyellow; */
+        /* background-image: linear-gradient(to right, red, blue); */
       }
 
       .header-container {
@@ -49,14 +59,19 @@
 
         /* In relation to ELEMENT size */
         transform: translate(-50%, -50%);
+        /* background-color: violet; */
+        /* text-align: center; */
+      }
+
+      .header-container-inner {
+        width: 50%;
+        /* background-color: blue; */
       }
 
       h1 {
         font-size: 52px;
         margin-bottom: 32px;
-
-        background-color: violet;
-        text-align: center;
+        line-height: 1.05;
       }
 
       p {
@@ -96,12 +111,15 @@
       </nav>
 
       <div class="header-container">
-        <h1>A healty meal delivered to your door,every single day</h1>
-        <p>
-          The smart 365-days-per-year food subscription that will make you eat
-          healty again. Tailored to your personal taster and nutritional needs.
-        </p>
-        <a href="#" class="btn">Start eating well</a>
+        <div class="header-container-inner">
+          <h1>A healty meal delivered to your door,every single day</h1>
+          <p>
+            The smart 365-days-per-year food subscription that will make you eat
+            healty again. Tailored to your personal taster and nutritional
+            needs.
+          </p>
+          <a href="#" class="btn">Start eating well</a>
+        </div>
       </div>
     </header>
 
